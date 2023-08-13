@@ -1,0 +1,19 @@
+#btnFloat {
+    height: 50px;
+    width: 50px;
+    padding-top: 8px;
+    padding-left: 9px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #3a3a3a;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#btnFloat.fade-in {
+    opacity: 1;
+}
+#btnFloat.fade-out {
+    opacity: 0;
+}

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Juy7ZptJHfqsCuBiU55nJOn4OYowW51kU3fQtP50FIF7W67Nu8DfVFIkoTa5/Ef0Da486sbvzNOQGCnCTaRhhA==",
+  "dgSpecHash": "vKNbwjkTW5Wi2gdhNyMyioZ/THjK3zAjZCnyJtJRBv3JLqZGW7f/CMjtq24GyjMLzRTqkPwWao2lLdGRb0cpoA==",
   "success": true,
   "projectFilePath": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\OLP_WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lázaro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Lázaro\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
@@ -74,6 +75,7 @@
     "C:\\Users\\Lázaro\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Lázaro\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

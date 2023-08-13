@@ -1,21 +1,27 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
+using NuGet.Protocol;
+using OLP_WEB.Common;
 using OLP_WEB.Models;
 using System.Net;
+using System.Net.Http;
+using System.Security.Claims;
 using System.Text;
 
 namespace OLP_WEB.Controllers
 {
     public class APIController : Controller
     {
-        //todo ver que hacer con los logs si registrarlos en BD
-        private readonly ILogger<APIController> _logger;
         private readonly HttpClient client_api;
-
-        public APIController(ILogger<APIController> logger)
+        public APIController()
         {
-            _logger = logger;
             client_api = new()
             {
                 BaseAddress = new Uri("https://localhost:7210/")
@@ -25,46 +31,139 @@ namespace OLP_WEB.Controllers
         [HttpPost("LogIn")]
         public async Task<IActionResult> LogIn(User user)
         {
-            var json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await client_api.PostAsync("api/User/LogIn", content);
-            switch (response.StatusCode)
+            using HttpResponseMessage result = await client_api.PostAsync("api/User/LogIn", JsonContent.Create(user));
+            try
             {
-                case HttpStatusCode.OK:
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    return Ok(responseContent);
-                case HttpStatusCode.NotFound:
-                    return NotFound("Usuario no encontrado");
-                default:
-                    return BadRequest("Error: " + response.StatusCode.ToString() + ". Al buscar el usuario");
+                result.EnsureSuccessStatusCode();
+                User responseUser = await result.Content.ReadAsAsync<User>();
+                UserController.SaveSesionCookie(responseUser, Response);
+                return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
+            }
+            catch (Exception ex)
+            {
+                string err_message = await result.Content.ReadAsStringAsync();
+                TempData[Constants.TempData_msgErr] = err_message.IsNullOrEmpty() ? ex.Message : err_message;
+                return RedirectToAction(Routes.UserActionLogIn, Routes.UserControllerName);
             }
         }
 
         [HttpPost("SignUp")]
         public async Task<IActionResult> SignUp(User user)
         {
-            var json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await client_api.PostAsync("api/User/SignUp", content);
-            switch (response.StatusCode)
+            using HttpResponseMessage result = await client_api.PostAsync("api/User/SignUp", JsonContent.Create(user));
+            try
             {
-                case HttpStatusCode.OK:
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    return Ok(responseContent);
-                    //var resultado = JsonConvert.DeserializeObject<Resultado>(responseContent);
-                    /**
-                     * public class Resultado
-                     * {
-                     * public bool Exito { get; set; }
-                     * public string Mensaje { get; set; }
-                     * }
-                     */
-                case HttpStatusCode.NotFound:
-                    return NotFound("Usuario no encontrado");
-                default:
-                    return BadRequest("Error: " + response.StatusCode.ToString() + ". Al buscar el usuario");
+                result.EnsureSuccessStatusCode();
+                UserController.SaveSesionCookie(user, Response);
+                User responseUser = await result.Content.ReadAsAsync<User>();
+                return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
+            }
+            catch (Exception ex)
+            {
+                string err_message = await result.Content.ReadAsStringAsync();
+                TempData[Constants.TempData_msgErr] = err_message.IsNullOrEmpty() ? ex.Message : err_message;
+                return RedirectToAction(Routes.UserActionSignUp, Routes.UserControllerName);
+            }
+        }
+
+        [HttpPost("UpdateUser")]
+        public async Task<IActionResult> UpdateUser(User user)
+        {
+            try
+            {
+                string UserSessionCookie = Request.Cookies[Constants.nameUserSessionCookie] ?? throw new Exception("No se pudo leer la información del usuario");
+                User UserCookie = JsonConvert.DeserializeObject<User>(UserSessionCookie) ?? throw new Exception("No se pudo leer la información del usuario");
+
+                if (UserCookie.Name != user.Name) UserCookie.Name = user.Name;
+                if (UserCookie.Email != user.Email) UserCookie.Email = user.Email;
+                if (UserCookie.Phone != user.Phone) UserCookie.Phone = user.Phone;
+
+                using HttpResponseMessage result = await client_api.PutAsync("api/User/Update", JsonContent.Create(UserCookie));
+                try
+                {
+                    result.EnsureSuccessStatusCode();
+                    User responseUser = await result.Content.ReadAsAsync<User>();
+                    UserController.SaveSesionCookie(responseUser, Response);
+                    return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
+                }
+                catch (HttpRequestException ex)
+                {
+                    string err_message = await result.Content.ReadAsStringAsync();
+                    TempData[Constants.TempData_msgErr] = err_message.IsNullOrEmpty() ? ex.Message : err_message;
+                    return RedirectToAction(Routes.UserActionSignUp, Routes.UserControllerName);
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData[Constants.TempData_msgErr] = ex.Message;
+                return RedirectToAction(Routes.UserActionSignUp, Routes.UserControllerName);
+            }
+        }
+
+        [HttpPost("UpdatePassword")]
+        public async Task<IActionResult> UpdatePassword(UserPassword userPassword)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(userPassword.CurrentPassword) ||
+                    string.IsNullOrWhiteSpace(userPassword.NewPassword) ||
+                    string.IsNullOrWhiteSpace(userPassword.NewPassword2) ||
+                    userPassword.NewPassword != userPassword.NewPassword2)
+                {
+                    throw new Exception("Contraseñas introducidas inválidas. Escríbelas de nuevo");
+                }
+
+                string UserSessionCookie = Request.Cookies[Constants.nameUserSessionCookie] ?? throw new Exception("No se pudo leer la información del usuario");
+                User UserCookie = JsonConvert.DeserializeObject<User>(UserSessionCookie) ?? throw new Exception("No se pudo leer la información del usuario");
+                userPassword.Id = UserCookie.Id;
+
+                using HttpResponseMessage result = await client_api.PutAsync("api/User/UpdatePassword", JsonContent.Create(userPassword));
+                try
+                {
+                    result.EnsureSuccessStatusCode();
+                    User responseUser = await result.Content.ReadAsAsync<User>();
+                    UserController.SaveSesionCookie(responseUser, Response);
+                    return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
+                }
+                catch (Exception ex)
+                {
+                    string err_message = await result.Content.ReadAsStringAsync();
+                    TempData[Constants.TempData_msgErr] = err_message.IsNullOrEmpty() ? ex.Message : err_message;
+                    return RedirectToAction(Routes.UserActionSignUp, Routes.UserControllerName);
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData[Constants.TempData_msgErr] = ex.Message;
+                return RedirectToAction(Routes.UserActionSignUp, Routes.UserControllerName);
+            }
+        }
+
+        [HttpPost("DeleteUser")]
+        public async Task<IActionResult> DeleteUser()
+        {
+            try
+            {
+                string UserSessionCookie = Request.Cookies[Constants.nameUserSessionCookie] ?? throw new Exception("No se pudo leer la información del usuario");
+                User User = JsonConvert.DeserializeObject<User>(UserSessionCookie) ?? throw new Exception("No se pudo leer la información del usuario");
+                using HttpResponseMessage result = await client_api.DeleteAsync("api/User/DeleteUser/" + User.Id.ToString());
+                try
+                {
+                    result.EnsureSuccessStatusCode();
+                    UserController.CloseSessionCookie(Response);
+                    return RedirectToAction(Routes.UserActionSignUp, Routes.UserControllerName);
+                }
+                catch (Exception ex)
+                {
+                    string err_message = await result.Content.ReadAsStringAsync();
+                    TempData[Constants.TempData_msgErr] = err_message.IsNullOrEmpty() ? BadRequest(ex.Message) : BadRequest(err_message);
+                    return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData[Constants.TempData_msgErr] = ex.Message;
+                return RedirectToAction(Routes.UserActionLogIn, Routes.UserControllerName);
             }
         }
     }

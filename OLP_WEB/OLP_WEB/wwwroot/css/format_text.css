@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+    .format_text {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1300px) {
+    .format_text {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .format_text {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+}

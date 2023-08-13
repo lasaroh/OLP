@@ -1,8 +1,59 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Index";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- ==================== TITLE ==================== -->
+<div id="div_title">
+	<h1>OLP</h1>
 </div>
+
+<p id="description" class="text-center fs-4">Aprende a tocar el instrumento que desees, consíguelo en nuestra tienda y sigue los pasos de los mejores.</p>
+<hr id="hr_title" />
+
+<!-- ==================== COURSES ==================== -->
+<div class="div_cards" data-aos="fade-up">
+	<div class="img_cards">
+		<img src="~/images/index_courses.jpg" class="img-fluid box-shadow" />
+	</div>
+	<div class="text_cards">
+		<h1 class="card-title display-1 fw-bold">Cursos</h1>
+		<p class="card-text fs-4">Aprende a tocar el instrumento que más te guste. Tanto si es tu primera vez como si ya tienes unas nociones, ¡hay un curso para ti!</p>
+		<a href="cursos.php" class="btn btn-primary">Empezar a tocar</a>
+	</div>
+</div>
+
+<hr />
+
+<!-- ==================== HISTORY ==================== -->
+<div class="div_cards" data-aos="fade-up">
+	<div class="text_cards">
+		<h1 class="card-title display-1 fw-bold">Historia</h1>
+		<p class="card-text fs-4">Quieres profundizar más en materia?, conoce la evolución de la música desde Wolfgang Amadeus Mozart hasta Bad Bunny.</p>
+		<a class="btn btn-primary" asp-controller="Home" asp-action="History">Ver más</a>
+	</div>
+	<div class="img_cards">
+		<img src="~/images/index_history.jpg" class="img-fluid box-shadow">
+	</div>
+</div>
+
+<hr />
+
+<!-- ==================== SHOP ==================== -->
+<div class="div_cards" data-aos="fade-up">
+	<div class="img_cards">
+		<img src="~/images/index_shop.jpg" class="img-fluid box-shadow">
+	</div>
+	<div class="text_cards">
+		<h2 class="card-title display-1 fw-bold">Tienda</h2>
+		<p class="card-text fs-4">Encuentra el equipo que necesitas. Guitarras, Pianos, Baterias, micrófonos, altavoces...</p>
+		<a class="btn btn-primary" asp-controller="Home" asp-action="Shop">Comprar</a>
+	</div>
+</div>
+
+<!-- FLOAT BUTTON -->
+<a href="#">
+	<span id="btnFloat" class="btn btn-primary">
+		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0, 0, 16, 16">
+			<path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+		</svg>
+</span></a>
+<script src="~/js/btnFloat.js"></script>

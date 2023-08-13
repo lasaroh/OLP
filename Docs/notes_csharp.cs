@@ -8,3 +8,21 @@ builder.webhost.configurekestrel(options =>
 		listenoptions.usehttps(certificate);
 	});
 });
+onepiece cap 60
+
+// LOGGER
+private readonly ILogger<APIController> _logger;
+private readonly HttpClient client_api;
+
+public APIController(ILogger<APIController> logger)
+{
+	_logger = logger;
+	client_api = new()
+	{
+		BaseAddress = new Uri("https://localhost:7210/")
+	};
+}
+_logger.LogTrace("Start login successful for user " + responseUser.Name);
+
+// IMPROVEMENTS
++ añadir validación del lado cliente antes de hacer peticiones a la API

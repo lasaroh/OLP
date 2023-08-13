@@ -1,0 +1,86 @@
+﻿@model ProfileViewModel
+@using Newtonsoft.Json;
+@using OLP_WEB.Common;
+@using OLP_WEB.Controllers;
+@{
+	ViewData["Title"] = "Profile";
+	string? UserSessionCookie = Context.Request.Cookies[Constants.nameUserSessionCookie];
+	User? User = string.IsNullOrEmpty(UserSessionCookie) ? null : JsonConvert.DeserializeObject<User>(UserSessionCookie);
+	if (User != null && !string.IsNullOrEmpty(UserSessionCookie))
+	{
+		Model.User.Name = string.IsNullOrEmpty(User.Name) ? "" : User.Name;
+		Model.User.Email = string.IsNullOrEmpty(User.Email) ? "" : User.Email;
+		Model.User.Phone = string.IsNullOrEmpty(User.Phone) ? "" : User.Phone;
+	}
+}
+<h2>@Model.User.Name</h2>
+<hr />
+<div class="row">
+	<div class="col-md-4">
+		<form asp-controller="API" asp-action="UpdateUser" method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="@Model.User.Name" class="control-label">Nombre</label>
+				<input asp-for="@Model.User.Name" class="form-control" placeholder="@Model.User.Name" />
+				<span asp-validation-for="@Model.User.Name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="@Model.User.Email" class="control-label"></label>
+				<input asp-for="@Model.User.Email" class="form-control" placeholder="@Model.User.Email" />
+				<span asp-validation-for="@Model.User.Email" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="@Model.User.Phone" class="control-label">Móvil</label>
+				<input asp-for="@Model.User.Phone" class="form-control" placeholder="@Model.User.Phone" />
+				<span asp-validation-for="@Model.User.Phone" class="text-danger"></span>
+			</div>
+			<input type="submit" value="Guardar cambios" class="btn btn-primary container-fluid mt-3" />
+		</form>
+
+
+		<!-- CARD -->
+		<div class="card mt-3">
+			<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPassword">Cambiar la contraseña</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="modalPassword" tabindex="-1" aria-hidden="true">
+				<div class="modal-dialog modal-content modal-body">
+					<form asp-controller="API" asp-action="UpdatePassword" method="post">
+						<div class="form-group">
+							<label asp-for="@Model.UserPassword.CurrentPassword" class="control-label">Contraseña actual</label>
+							<input asp-for="@Model.UserPassword.CurrentPassword" class="form-control" type="password" />
+							<span asp-validation-for="@Model.UserPassword.CurrentPassword" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="@Model.UserPassword.NewPassword" class="control-label">Nueva contraseña</label>
+							<input asp-for="@Model.UserPassword.NewPassword" class="form-control" type="password" />
+							<span asp-validation-for="@Model.UserPassword.NewPassword" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="@Model.UserPassword.NewPassword2" class="control-label">Repite la nueva contraseña</label>
+							<input asp-for="@Model.UserPassword.NewPassword2" class="form-control" type="password" />
+							<span asp-validation-for="@Model.UserPassword.NewPassword2" class="text-danger"></span>
+						</div>
+						<input type="submit" value="Guardar cambios" class="btn btn-primary mt-3" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="form-group mt-3 d-flex flex-nowrap">
+			<form class="w-100" asp-controller="User" asp-action="CloseSession" method="post">
+				<input type="submit" class="btn btn-warning w-100" value="Cerrar Sesión" />
+			</form>
+			<form class="w-100 ms-2" asp-controller="API" asp-action="DeleteUser" method="post">
+				<input type="submit" class="btn btn-danger w-100" value="Eliminar Cuenta" />
+			</form>
+		</div>
+
+
+		@if (!string.IsNullOrEmpty(ViewBag.msgErr))
+		{
+			<div class="alert alert-info">@ViewBag.msgErr</div>
+		}
+	</div>
+</div>

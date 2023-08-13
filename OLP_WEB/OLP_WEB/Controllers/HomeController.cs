@@ -16,21 +16,28 @@ namespace OLP_WEB.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult History()
         {
             return View();
         }
 
-        public IActionResult SignUp()
+        public IActionResult Shop()
         {
             return View();
         }
 
-        public IActionResult LogIn()
+		public IActionResult PrivacyPolicy()
         {
             return View();
         }
 
+        public IActionResult TermsAndConditionsOfUse()
+        {
+            return View();
+        }
+        /// <summary>
+        /// Handles unhandled errors in the application
+        /// </summary>
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

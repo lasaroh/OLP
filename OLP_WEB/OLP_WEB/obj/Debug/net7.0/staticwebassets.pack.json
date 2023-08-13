@@ -5,12 +5,76 @@
       "PackagePath": "staticwebassets\\OLP_WEB.bundle.scp.css"
     },
     {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\css\\btnFloat.css",
+      "PackagePath": "staticwebassets\\css\\btnFloat.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\css\\format_text.css",
+      "PackagePath": "staticwebassets\\css\\format_text.css"
+    },
+    {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_1.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel_1.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_2.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel_2.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_3.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel_3.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\github_invert.png",
+      "PackagePath": "staticwebassets\\images\\github_invert.png"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_courses.jpg",
+      "PackagePath": "staticwebassets\\images\\index_courses.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_history.jpg",
+      "PackagePath": "staticwebassets\\images\\index_history.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_shop.jpg",
+      "PackagePath": "staticwebassets\\images\\index_shop.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\cello.png",
+      "PackagePath": "staticwebassets\\images\\shop\\cello.png"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\drum_set.png",
+      "PackagePath": "staticwebassets\\images\\shop\\drum_set.png"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\electric_guitar_cable.png",
+      "PackagePath": "staticwebassets\\images\\shop\\electric_guitar_cable.png"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\flute.png",
+      "PackagePath": "staticwebassets\\images\\shop\\flute.png"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\piano.png",
+      "PackagePath": "staticwebassets\\images\\shop\\piano.png"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\js\\btnFloat.js",
+      "PackagePath": "staticwebassets\\js\\btnFloat.js"
     },
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\js\\site.js",
@@ -19,6 +83,186 @@
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\backup_dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\backup_dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\dist\\bootstrapv5.2.3.txt",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\bootstrapv5.2.3.txt"
     },
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
