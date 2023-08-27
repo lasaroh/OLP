@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using OLP_WEB.Models;
+using SharedModels;
 
 namespace OLP_WEB.Data
 {
@@ -14,6 +15,6 @@ namespace OLP_WEB.Data
         {
         }
 
-        public DbSet<OLP_WEB.Models.User> User { get; set; } = default!;
+        public DbSet<User> User { get; set; } = default!;
     }
 }

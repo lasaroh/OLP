@@ -8,7 +8,6 @@ builder.webhost.configurekestrel(options =>
 		listenoptions.usehttps(certificate);
 	});
 });
-onepiece cap 60
 
 // LOGGER
 private readonly ILogger<APIController> _logger;
@@ -26,3 +25,7 @@ _logger.LogTrace("Start login successful for user " + responseUser.Name);
 
 // IMPROVEMENTS
 + añadir validación del lado cliente antes de hacer peticiones a la API
++ cloudfare para guardar imagenes/videos
+
+// COMMIT
+pasados los modelos a biblioteca de clases

@@ -3784,6 +3784,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "SharedModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/SharedModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedModels.dll": {}
+        }
       }
     }
   },
@@ -11082,6 +11092,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "SharedModels/1.0.0": {
+      "type": "project",
+      "path": "../../SharedModels/SharedModels.csproj",
+      "msbuildProject": "../../SharedModels/SharedModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11091,6 +11106,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.5",
+      "SharedModels >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -11125,7 +11141,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Proyectos\\OLP\\SharedModels\\SharedModels.csproj": {
+              "projectPath": "D:\\Proyectos\\OLP\\SharedModels\\SharedModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

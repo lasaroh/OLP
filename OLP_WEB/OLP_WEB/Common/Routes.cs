@@ -21,5 +21,11 @@ namespace OLP_WEB.Common
 		public const string UserActionLogIn = "LogIn";
 		public const string UserActionProfile = "Profile";
 		#endregion
+
+		#region CourseController
+		public const string CourseControllerCame = "Course";
+		
+		public const string CourseActionIndex = "Index";
+		#endregion
 	}
 }

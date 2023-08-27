@@ -41,16 +41,16 @@
       "PackagePath": "staticwebassets\\images\\github_invert.png"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_courses.jpg",
-      "PackagePath": "staticwebassets\\images\\index_courses.jpg"
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\courses.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\courses.jpg"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_history.jpg",
-      "PackagePath": "staticwebassets\\images\\index_history.jpg"
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\history.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\history.jpg"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_shop.jpg",
-      "PackagePath": "staticwebassets\\images\\index_shop.jpg"
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\shop.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\shop.jpg"
     },
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\cello.png",

@@ -2,7 +2,7 @@
 {
     public class Constants
     {
-        public const string nameUserSessionCookie = "UserSession";
+        public const string NameUserSessionCookie = "UserSession";
         public const string TempData_msgErr = "msg_err";
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QX0wuE34TZxZ3+igrrG1eOxK9HXnOUpebk3sK0oaMP0=",
+  "Hash": "PdwmOX3IQnjhtBv8TJCRTrUQAdfq1VuYMMCzY73M14o=",
   "Source": "OLP_WEB",
   "BasePath": "_content/OLP_WEB",
   "Mode": "Default",
@@ -204,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\images\\github_invert.png"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_courses.jpg",
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\courses.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
       "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/index_courses.jpg",
+      "RelativePath": "images/index/courses.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\index_courses.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\index\\courses.jpg"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_history.jpg",
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\history.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
       "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/index_history.jpg",
+      "RelativePath": "images/index/history.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\index_history.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\index\\history.jpg"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index_shop.jpg",
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\shop.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
       "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/index_shop.jpg",
+      "RelativePath": "images/index/shop.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,7 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\index_shop.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\index\\shop.jpg"
     },
     {
       "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\cello.png",

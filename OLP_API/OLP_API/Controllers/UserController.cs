@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OLP_API.Data;
-using OLP_API.Models;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,6 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Reflection;
 using Microsoft.AspNetCore.JsonPatch;
+using SharedModels;
 
 namespace OLP_API.Controllers
 {
@@ -72,6 +72,7 @@ namespace OLP_API.Controllers
                 return ex.InnerException != null ? BadRequest(ex.InnerException.Message) : BadRequest(ex.Message);
             }
         }
+
         [HttpPut("Update")]
         public IActionResult Update(User user)
         {

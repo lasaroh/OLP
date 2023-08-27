@@ -277,3 +277,5 @@ D:\Proyectos\OLP\OLP_API\OLP_API\obj\Debug\net7.0\OLP_API.pdb
 D:\Proyectos\OLP\OLP_API\OLP_API\obj\Debug\net7.0\OLP_API.genruntimeconfig.cache
 D:\Proyectos\OLP\OLP_API\OLP_API\obj\Debug\net7.0\ref\OLP_API.dll
 D:\Proyectos\OLP\OLP_API\OLP_API\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Proyectos\OLP\OLP_API\OLP_API\bin\Debug\net7.0\SharedModels.dll
+D:\Proyectos\OLP\OLP_API\OLP_API\bin\Debug\net7.0\SharedModels.pdb

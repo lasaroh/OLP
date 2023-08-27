@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using NuGet.Protocol;
 using OLP_WEB.Common;
 using OLP_WEB.Models;
+using SharedModels;
 
 namespace OLP_WEB.Controllers
 {
@@ -11,7 +12,7 @@ namespace OLP_WEB.Controllers
         public IActionResult SignUp()
         {
 			ViewBag.msgErr = TempData[Constants.TempData_msgErr];
-			if (Request.Cookies.ContainsKey(Constants.nameUserSessionCookie))
+			if (Request.Cookies.ContainsKey(Constants.NameUserSessionCookie))
             {
                 return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
             } else
@@ -23,7 +24,7 @@ namespace OLP_WEB.Controllers
         public IActionResult LogIn()
         {
 			ViewBag.msgErr = TempData[Constants.TempData_msgErr];
-			if (Request.Cookies.ContainsKey(Constants.nameUserSessionCookie))
+			if (Request.Cookies.ContainsKey(Constants.NameUserSessionCookie))
             {
                 return RedirectToAction(Routes.UserActionProfile, Routes.UserControllerName);
             }
@@ -48,11 +49,11 @@ namespace OLP_WEB.Controllers
         #region "Manage cookies"
         public static void SaveSesionCookie(User user, HttpResponse response)
         {
-            response.Cookies.Append(Constants.nameUserSessionCookie, user.ToJson());   
+            response.Cookies.Append(Constants.NameUserSessionCookie, user.ToJson());   
         }
         public static void CloseSessionCookie(HttpResponse response)
         {
-            response.Cookies.Delete(Constants.nameUserSessionCookie);
+            response.Cookies.Delete(Constants.NameUserSessionCookie);
         }
         #endregion
     }

@@ -19,7 +19,7 @@
 				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 					<ul class="navbar-nav flex-grow-1">
 						<li class="nav-item">
-							<a class="nav-link text-light" asp-controller="Home" asp-action="Courses">Cursos</a>
+							<a class="nav-link text-light" asp-controller="Course" asp-action="Index">Cursos</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-light" asp-controller="Home" asp-action="History">Historia</a>
@@ -27,7 +27,7 @@
 						<li class="nav-item">
 							<a class="nav-link text-light" asp-controller="Home" asp-action="Shop">Tienda</a>
 						</li>
-						@if (Context.Request.Cookies.ContainsKey(Constants.nameUserSessionCookie))
+						@if (Context.Request.Cookies.ContainsKey(Constants.NameUserSessionCookie))
 						{
 							<li class="nav-item">
 								<a class="nav-link text-light" asp-controller="User" asp-action="Profile">Perfil</a>

@@ -1,4 +1,6 @@
-﻿namespace OLP_WEB.Models
+﻿using SharedModels;
+
+namespace OLP_WEB.Models
 {
 	public class ProfileViewModel
 	{

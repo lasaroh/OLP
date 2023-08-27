@@ -1,10 +1,11 @@
 ﻿@model ProfileViewModel
 @using Newtonsoft.Json;
+@using SharedModels
 @using OLP_WEB.Common;
 @using OLP_WEB.Controllers;
 @{
 	ViewData["Title"] = "Profile";
-	string? UserSessionCookie = Context.Request.Cookies[Constants.nameUserSessionCookie];
+	string? UserSessionCookie = Context.Request.Cookies[Constants.NameUserSessionCookie];
 	User? User = string.IsNullOrEmpty(UserSessionCookie) ? null : JsonConvert.DeserializeObject<User>(UserSessionCookie);
 	if (User != null && !string.IsNullOrEmpty(UserSessionCookie))
 	{
@@ -68,7 +69,7 @@
 		</div>
 
 
-		<div class="form-group mt-3 d-flex flex-nowrap">
+		<div class="form-group my-3 d-flex flex-nowrap">
 			<form class="w-100" asp-controller="User" asp-action="CloseSession" method="post">
 				<input type="submit" class="btn btn-warning w-100" value="Cerrar Sesión" />
 			</form>
