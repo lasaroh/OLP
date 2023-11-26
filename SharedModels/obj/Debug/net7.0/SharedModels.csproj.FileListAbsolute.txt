@@ -1,7 +1,6 @@
 D:\Proyectos\OLP\SharedModels\bin\Debug\net7.0\SharedModels.deps.json
 D:\Proyectos\OLP\SharedModels\bin\Debug\net7.0\SharedModels.dll
 D:\Proyectos\OLP\SharedModels\bin\Debug\net7.0\SharedModels.pdb
-D:\Proyectos\OLP\SharedModels\obj\Debug\net7.0\SharedModels.csproj.AssemblyReference.cache
 D:\Proyectos\OLP\SharedModels\obj\Debug\net7.0\SharedModels.GeneratedMSBuildEditorConfig.editorconfig
 D:\Proyectos\OLP\SharedModels\obj\Debug\net7.0\SharedModels.AssemblyInfoInputs.cache
 D:\Proyectos\OLP\SharedModels\obj\Debug\net7.0\SharedModels.AssemblyInfo.cs

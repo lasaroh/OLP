@@ -23,12 +23,24 @@ namespace OLP_API.Controllers
 		public IActionResult Courses(int Id_Category, int Page)
         {
             int skipCourses = Constants.MaxCoursesReturned * Page;
-            try
+            List<Course> courses;
+
+			try
             {
-				List<Course> courses = _context.Course.Where(x => x.Id_Category == Id_Category).
-                                                       Skip(skipCourses).
-                                                       Take(Constants.MaxCoursesReturned).
-                                                       ToList();
+                if (Id_Category == 0)
+                {
+					// No filter by category
+					courses = _context.Course.Skip(skipCourses).
+											  Take(Constants.MaxCoursesReturned).
+											  ToList();
+				} else
+                {
+					courses = _context.Course.Where(x => x.Id_Category == Id_Category).
+											  Skip(skipCourses).
+											  Take(Constants.MaxCoursesReturned).
+											  ToList();
+				}
+				
                 if (!courses.Any()) return BadRequest("No hay cursos que coincidan con el filtro");
 				return Ok(courses);
             }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "75Fgzas1xGee9D4JAycMITp19eQngKc02K3f1dT3wNpPjJmko/n79pQLi1oy5B/hf++Fhvr/RasPSW9j0usJCA==",
+  "dgSpecHash": "59YtSodCbRu+BMz03aReIC5i7s4zQIB7nWmiH9t6swfA59f0uX1dOKWjC08smfr+nYl9LhRUwgUP8Tr550SSaQ==",
   "success": true,
   "projectFilePath": "D:\\Proyectos\\OLP\\OLP_API\\OLP_API\\OLP_API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Lázaro\\.nuget\\packages\\awssdk.core\\3.7.202.1\\awssdk.core.3.7.202.1.nupkg.sha512",
+    "C:\\Users\\Lázaro\\.nuget\\packages\\awssdk.s3\\3.7.203.7\\awssdk.s3.3.7.203.7.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Lázaro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

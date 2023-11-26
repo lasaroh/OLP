@@ -23,9 +23,15 @@ namespace OLP_WEB.Common
 		#endregion
 
 		#region CourseController
-		public const string CourseControllerCame = "Course";
-		
-		public const string CourseActionIndex = "Index";
+		public const string CourseControllerCourse = "Course";
+
+		public const string CourseActionCourseList = "CourseList";
+		#endregion
+
+		#region LessonController
+		public const string LessonControllerName = "Lesson";
+
+		public const string LessonActionLessonSelected = "LessonSelected";
 		#endregion
 	}
 }

@@ -277,3 +277,5 @@ D:\Proyectos\OLP\OLP_WEB\OLP_WEB\obj\Debug\net7.0\refint\OLP_WEB.dll
 D:\Proyectos\OLP\OLP_WEB\OLP_WEB\obj\Debug\net7.0\OLP_WEB.pdb
 D:\Proyectos\OLP\OLP_WEB\OLP_WEB\obj\Debug\net7.0\OLP_WEB.genruntimeconfig.cache
 D:\Proyectos\OLP\OLP_WEB\OLP_WEB\obj\Debug\net7.0\ref\OLP_WEB.dll
+D:\Proyectos\OLP\OLP_WEB\OLP_WEB\bin\Debug\net7.0\AWSSDK.Core.dll
+D:\Proyectos\OLP\OLP_WEB\OLP_WEB\bin\Debug\net7.0\AWSSDK.S3.dll

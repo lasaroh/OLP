@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PdwmOX3IQnjhtBv8TJCRTrUQAdfq1VuYMMCzY73M14o=",
+  "Hash": "SOB0N7Cg343/ivBuYkFs7KQDl5R1i2AmQQN3VqMXKpU=",
   "Source": "OLP_WEB",
   "BasePath": "_content/OLP_WEB",
   "Mode": "Default",
@@ -119,23 +119,6 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\favicon.ico",
-      "SourceId": "OLP_WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
-      "BasePath": "_content/OLP_WEB",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
       "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_1.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
@@ -185,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel_3.jpg"
+    },
+    {
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\favicon.ico",
+      "SourceId": "OLP_WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
+      "BasePath": "_content/OLP_WEB",
+      "RelativePath": "images/favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
     },
     {
       "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\github_invert.png",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\index\\shop.jpg"
+    },
+    {
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\logo.jpg",
+      "SourceId": "OLP_WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
+      "BasePath": "_content/OLP_WEB",
+      "RelativePath": "images/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.jpg"
     },
     {
       "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\cello.png",

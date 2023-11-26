@@ -13,5 +13,6 @@ namespace OLP_API.Data
         public DbSet<User> User { get; set; } = default!;
 		public DbSet<Course> Course { get; set; } = default!;
         public DbSet<Category> Category { get; set; } = default!;
+        public DbSet<Lesson> Lesson { get; set; }
 	}
 }

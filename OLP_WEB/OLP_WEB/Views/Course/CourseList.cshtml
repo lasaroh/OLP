@@ -1,0 +1,81 @@
+﻿@model CourseViewModel
+@using Newtonsoft.Json;
+@using OLP_WEB.Common;
+@using SharedModels;
+@{
+	ViewData["Title"] = "Course";
+}
+<!-- ==================== TITLE ==================== -->
+<div id="div_title">
+	<h2>Cursos</h2>
+</div>
+
+<!-- ==================== FILTERS ==================== -->
+<form class="row my-5">
+	<div class="col col-lg-1 d-flex align-items-center">
+		<p class="m-0">Categoría</p>
+	</div>
+	<div class="col col-lg-5">
+		<select class="form-control" id="category">
+			<option id="0">Cualquiera</option>
+			@if (Model != null)
+			{
+				@foreach (Category category in Model.Categories)
+				{
+					<option id="@category.Id">@category.Name</option>
+				}
+			}
+		</select>
+	</div>
+	<div class="col col-lg-1">
+		<input type="submit" value="Refrescar" class="btn btn-primary" />
+	</div>
+</form>
+
+<!-- ==================== MESSAGE ==================== -->
+@if (!string.IsNullOrEmpty(ViewBag.msgErr))
+{
+	<div class="alert alert-info">@ViewBag.msgErr</div>
+}
+
+<!-- ==================== COURSES ==================== -->
+<div class="container my-5">
+	@if (Model != null)
+	{
+		<div class="card-group">
+			@for (int i = 0; i < Model.Courses.Count;)
+			{
+				<div class="row">
+					@for (int j = 0; j < 2; j++)
+					{
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">@Model.Courses[i].Name</h5>
+								<p class="card-text">@Model.Courses[i].Description</p>
+								<form asp-controller="Course" asp-action="CourseSelected">
+									<input type="hidden" name="IdCourse" value="@Model.Courses[i].Id" />
+									<input type="submit" class="btn btn-primary" value="Empezar curso" />
+								</form>
+							</div>
+						</div>
+						i++;
+						if (i == Model.Courses.Count) break;
+					}
+				</div>
+			}
+		</div>
+	}
+
+	<div></div>
+</div>
+
+<!-- ==================== PAGINATION ==================== -->
+<div class="d-flex justify-content-center">
+	<ul class="pagination">
+		<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		<li class="page-item"><a class="page-link" href="#">1</a></li>
+		<li class="page-item"><a class="page-link" href="#">2</a></li>
+		<li class="page-item"><a class="page-link" href="#">3</a></li>
+		<li class="page-item"><a class="page-link" href="#">Next</a></li>
+	</ul>
+</div>

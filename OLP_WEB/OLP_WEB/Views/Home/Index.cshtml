@@ -17,7 +17,10 @@
 	<div class="text_cards">
 		<h1 class="card-title display-1 fw-bold">Cursos</h1>
 		<p class="card-text fs-4">Aprende a tocar el instrumento que más te guste. Tanto si es tu primera vez como si ya tienes unas nociones, ¡hay un curso para ti!</p>
-		<a href="cursos.php" class="btn btn-primary">Empezar a tocar</a>
+		<form asp-controller="Course" asp-action="CourseList" method="post">
+			<input type="hidden" value="0" />
+			<input type="submit" class="btn btn-primary" value="Empezar a tocar"/>
+		</form>
 	</div>
 </div>
 

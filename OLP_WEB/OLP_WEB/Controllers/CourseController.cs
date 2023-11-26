@@ -20,7 +20,7 @@ namespace OLP_WEB.Controllers
 			};
 		}
 
-		public async Task<IActionResult> Index()
+		public async Task<IActionResult> CourseList(int Id_Category, int Page)
 		{
 			if (!Request.Cookies.ContainsKey(Constants.NameUserSessionCookie))
 			{
@@ -39,7 +39,7 @@ namespace OLP_WEB.Controllers
 					List<Category> categories = await requestCategories.Content.ReadAsAsync<List<Category>>();
 
 					// GET COURSES
-					string parameters = "Id_Category=0&Page=0";
+					string parameters = $"Id_Category={Id_Category}&Page={Page}";
 					using HttpResponseMessage result = await client_api.GetAsync("api/Course/Courses?" + parameters);
 					if (result.StatusCode == HttpStatusCode.OK)
 					{
@@ -59,6 +59,22 @@ namespace OLP_WEB.Controllers
 					ViewBag.msgErr = ex.Message;
 					return View();
 				}
+			}
+		}
+
+		public async Task<IActionResult> CourseSelected(int IdCourse)
+		{
+			try
+			{
+				using HttpResponseMessage request = await client_api.GetAsync("api/Lesson/LessonsByCourse?IdCourse=" + IdCourse);
+				request.EnsureSuccessStatusCode();
+				CourseLessonsViewModel model = await request.Content.ReadAsAsync<CourseLessonsViewModel>();
+				return View(model);
+			}
+			catch (Exception ex)
+			{
+				ViewBag.msgErr = ex.Message;
+				return RedirectToAction(Routes.CourseActionCourseList, Routes.CourseControllerCourse);
 			}
 		}
 	}

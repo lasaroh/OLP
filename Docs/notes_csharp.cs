@@ -25,7 +25,13 @@ _logger.LogTrace("Start login successful for user " + responseUser.Name);
 
 // IMPROVEMENTS
 + añadir validación del lado cliente antes de hacer peticiones a la API
-+ cloudfare para guardar imagenes/videos
 
-// COMMIT
-pasados los modelos a biblioteca de clases
+
+//TODO PROYECTO
+
+
+//TODO DOCUMENTACIÓN
++ Diagrama de casos de uso
++ Introducción
++ Portada
++ ¿Un curso puede ser utilizado por muchos usuarios no puede ser viceversa también?

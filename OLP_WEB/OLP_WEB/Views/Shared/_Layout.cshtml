@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>@ViewData["Title"] - OLP_WEB</title>
+	<link rel="icon" href="~/images/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="~/css/btnFloat.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/format_text.css" asp-append-version="true" />
@@ -15,11 +16,13 @@
 	<header>
 		<nav class="navbar navbar-expand-sm border-bottom box-shadow mb-3">
 			<div class="container-fluid">
-				<a class="navbar-brand text-light" asp-controller="Home" asp-action="Index">OLP_WEB</a>
+				<a class="navbar-brand text-light" asp-controller="Home" asp-action="Index">
+					<img src="~/images/logo.jpg" alt="OLP_WEB Logo" class="img-fluid" height="32" width="32" />
+				</a>
 				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 					<ul class="navbar-nav flex-grow-1">
 						<li class="nav-item">
-							<a class="nav-link text-light" asp-controller="Course" asp-action="Index">Cursos</a>
+							<a class="nav-link text-light" asp-controller="Course" asp-action="CourseList">Cursos</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-light" asp-controller="Home" asp-action="History">Historia</a>

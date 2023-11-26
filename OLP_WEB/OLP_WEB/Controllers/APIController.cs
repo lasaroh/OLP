@@ -1,4 +1,5 @@
-﻿using Azure;
+﻿using Amazon.S3.Model;
+using Azure;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -190,5 +191,6 @@ namespace OLP_WEB.Controllers
 				return RedirectToAction(Routes.UserActionLogIn, Routes.UserControllerName);
 			}
 		}
+
 	}
 }

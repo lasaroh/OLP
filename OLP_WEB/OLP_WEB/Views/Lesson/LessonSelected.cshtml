@@ -1,0 +1,23 @@
+﻿@using Amazon.S3.Model;
+@using SharedModels;
+@model (string LessonName, string video_url);
+@{
+	ViewData["Title"] = Model.LessonName;
+}
+<!-- ==================== TITLE ==================== -->
+<div id="div_title">
+	<h3>@Model.LessonName</h3>
+</div>
+
+<!-- ==================== LESSON ==================== -->
+@if (string.IsNullOrEmpty(Model.video_url))
+{
+	<p>Video no disponible.</p>
+}
+else
+{
+	<video controls width="1280" height="720">
+		<source src="@Model.video_url" type="video/mp4">
+		Video no soportado por el navegador
+	</video>
+}

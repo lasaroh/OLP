@@ -1,0 +1,23 @@
+﻿@using SharedModels;
+@model CourseLessonsViewModel
+@{
+	ViewData["Title"] = Model.Course.Name;
+}
+<!-- ==================== TITLE ==================== -->
+<div id="div_title">
+	<h3>@Model.Course.Name</h3>
+</div>
+
+<!-- ==================== LESSONS ==================== -->
+@for (int i = 0; i < Model.Lessons.Count - 1; i++)
+{
+	Lesson lesson = Model.Lessons[i];
+	<div class="my-4">
+		<form asp-controller="Lesson" asp-action="LessonSelected">
+			<input type="hidden" name="IdCourse" value="@Model.Course.Id" />
+			<input type="hidden" name="OrderLesson" value="@lesson.Order_Number" />
+			<input type="hidden" name="LessonName" value="@lesson.Name" />
+			<input type="submit" class="btn btn-sm btn-light" value="@lesson.Order_Number - @lesson.Name" />
+		</form>
+	</div>
+}

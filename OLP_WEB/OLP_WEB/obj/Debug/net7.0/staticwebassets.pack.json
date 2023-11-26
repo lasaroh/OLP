@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_1.jpg",
       "PackagePath": "staticwebassets\\images\\carousel_1.jpg"
     },
@@ -35,6 +31,10 @@
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_3.jpg",
       "PackagePath": "staticwebassets\\images\\carousel_3.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\github_invert.png",
@@ -51,6 +51,10 @@
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\shop.jpg",
       "PackagePath": "staticwebassets\\images\\index\\shop.jpg"
+    },
+    {
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\shop\\cello.png",

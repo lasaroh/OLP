@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "OLP_WEB/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.205.17",
           "Microsoft.AspNet.WebApi.Client": "5.2.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
@@ -16,6 +17,25 @@
         },
         "runtime": {
           "OLP_WEB.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.204.8": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.204.8"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.205.17": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.204.8"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.205.17"
+          }
         }
       },
       "Azure.Core/1.24.0": {
@@ -2310,6 +2330,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.204.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T1h4xZeHN20p8Jqad6TiDxWFJVC0ZjOEqoR1cV1Q+H+X1x8nmsNNlqNty92HwhmUzuKo0Hq2qh6dgz4+4lTGJg==",
+      "path": "awssdk.core/3.7.204.8",
+      "hashPath": "awssdk.core.3.7.204.8.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.205.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TbPzxJ0EQ0PeHeIVP8IAnO/7SvTymK8rGvb94tN4VRgE7Pleg2TSRXalXQr2Jf61Z17D728K0s9DoSqp9J7tOA==",
+      "path": "awssdk.s3/3.7.205.17",
+      "hashPath": "awssdk.s3.3.7.205.17.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",
