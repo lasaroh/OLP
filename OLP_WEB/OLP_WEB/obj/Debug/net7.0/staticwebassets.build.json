@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SOB0N7Cg343/ivBuYkFs7KQDl5R1i2AmQQN3VqMXKpU=",
+  "Hash": "q4Kg01SAJeVQMBFvb8KyUz3EVXjr37HzGGMHsidAv4A=",
   "Source": "OLP_WEB",
   "BasePath": "_content/OLP_WEB",
   "Mode": "Default",
@@ -119,57 +119,6 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_1.jpg",
-      "SourceId": "OLP_WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
-      "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/carousel_1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\carousel_1.jpg"
-    },
-    {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_2.jpg",
-      "SourceId": "OLP_WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
-      "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/carousel_2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\carousel_2.jpg"
-    },
-    {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_3.jpg",
-      "SourceId": "OLP_WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
-      "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/carousel_3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\carousel_3.jpg"
-    },
-    {
       "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\favicon.ico",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
@@ -204,12 +153,12 @@
       "OriginalItemSpec": "wwwroot\\images\\github_invert.png"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\courses.jpg",
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\homepage\\courses.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
       "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/index/courses.jpg",
+      "RelativePath": "images/homepage/courses.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +167,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\index\\courses.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\homepage\\courses.jpg"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\history.jpg",
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\homepage\\history.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
       "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/index/history.jpg",
+      "RelativePath": "images/homepage/history.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +184,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\index\\history.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\homepage\\history.jpg"
     },
     {
-      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\shop.jpg",
+      "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\homepage\\shop.jpg",
       "SourceId": "OLP_WEB",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\",
       "BasePath": "_content/OLP_WEB",
-      "RelativePath": "images/index/shop.jpg",
+      "RelativePath": "images/homepage/shop.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,7 +201,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\index\\shop.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\homepage\\shop.jpg"
     },
     {
       "Identity": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\logo.jpg",

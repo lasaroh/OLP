@@ -21,18 +21,6 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_1.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel_1.jpg"
-    },
-    {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_2.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel_2.jpg"
-    },
-    {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\carousel_3.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel_3.jpg"
-    },
-    {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
@@ -41,16 +29,16 @@
       "PackagePath": "staticwebassets\\images\\github_invert.png"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\courses.jpg",
-      "PackagePath": "staticwebassets\\images\\index\\courses.jpg"
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\homepage\\courses.jpg",
+      "PackagePath": "staticwebassets\\images\\homepage\\courses.jpg"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\history.jpg",
-      "PackagePath": "staticwebassets\\images\\index\\history.jpg"
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\homepage\\history.jpg",
+      "PackagePath": "staticwebassets\\images\\homepage\\history.jpg"
     },
     {
-      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\index\\shop.jpg",
-      "PackagePath": "staticwebassets\\images\\index\\shop.jpg"
+      "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\homepage\\shop.jpg",
+      "PackagePath": "staticwebassets\\images\\homepage\\shop.jpg"
     },
     {
       "Id": "D:\\Proyectos\\OLP\\OLP_WEB\\OLP_WEB\\wwwroot\\images\\logo.jpg",

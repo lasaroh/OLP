@@ -4,29 +4,29 @@
 @{
 	ViewData["Title"] = "LogIn";
 }
-<h1>Iniciar Sesión</h1>
-<hr />
-<div class="row">
-	<div class="col-md-4">
-		<form asp-controller="API" asp-action="LogIn" method="post">
-			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<div class="form-group">
-				<label asp-for="Email" class="control-label"></label>
-				<input asp-for="Email" class="form-control" required />
-				<span asp-validation-for="Email" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Password" class="control-label"></label>
-				<input asp-for="Password" class="form-control" type="password" required />
-				<span asp-validation-for="Password" class="text-danger"></span>
-			</div>
-			<div class="form-group my-3">
-				<input type="submit" value="Iniciar Sesión" class="btn btn-primary" />
-			</div>
-		</form>
-		@if (!string.IsNullOrEmpty(ViewBag.msgErr))
-		{
-			<div class="alert alert-info">@ViewBag.msgErr</div>
-		}
+
+<div class="container vh-100">
+	<div class="text-center">
+		<img src="~/images/logo.jpg" width="128px" height="128px" class="my-5" />
+		<h2 class="my-3">Iniciar Sesión</h2>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-4">
+			<form asp-controller="API" asp-action="LogIn" method="post">
+				<div class="form-group my-3">
+					<label asp-for="Email" class="control-label"></label>
+					<input asp-for="Email" class="form-control my-2" required />
+				</div>
+				<div class="form-group my-3">
+					<label asp-for="Password" class="control-label"></label>
+					<input asp-for="Password" class="form-control my-2" type="password" required />
+				</div>
+				<input type="submit" value="Iniciar Sesión" class="btn btn-primary  my-3" />
+			</form>
+			@if (!string.IsNullOrEmpty(ViewBag.msgErr))
+			{
+				<div class="alert alert-info">@ViewBag.msgErr</div>
+			}
+		</div>
 	</div>
 </div>

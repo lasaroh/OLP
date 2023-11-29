@@ -4,44 +4,41 @@
 @{
 	ViewData["Title"] = "SignUp";
 }
-<h1>Registrarse</h1>
-<hr />
-<div class="row">
-	<div class="col-md-4">
-		<form asp-controller="API" asp-action="SignUp" method="post">
-			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<div class="form-group">
-				<label asp-for="Name" class="control-label">Nombre</label>
-				<input asp-for="Name" class="form-control" />
-				<span asp-validation-for="Name" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Email" class="control-label"></label>
-				<input asp-for="Email" class="form-control" />
-				<span asp-validation-for="Email" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Password" class="control-label">Contraseña</label>
-				<input asp-for="Password" class="form-control" type="password" />
-				<span asp-validation-for="Password" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Password2" class="control-label">Repite contraseña</label>
-				<input asp-for="Password2" class="form-control" type="password" />
-				<span asp-validation-for="Password2" class="text-danger"></span>
-			</div>
-			<div class="form-group">
-				<label asp-for="Phone" class="control-label">Móvil</label>
-				<input asp-for="Phone" class="form-control" />
-				<span asp-validation-for="Phone" class="text-danger"></span>
-			</div>
-			<div class="form-group my-3">
-				<input type="submit" value="Registrarse" class="btn btn-primary" />
-			</div>
-		</form>
-		@if (!string.IsNullOrEmpty(ViewBag.msgErr))
-		{
-			<div class="alert alert-info">@ViewBag.msgErr</div>
-		}
+
+<div class="container mb-5">
+	<div class="text-center">
+		<img src="~/images/logo.jpg" width="128px" height="128px" class="my-5" />
+		<h2 class="my-3">Registrarse</h2>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-4">
+			<form asp-controller="API" asp-action="SignUp" method="post">
+				<div class="form-group my-3">
+					<label asp-for="Name" class="control-label">Nombre</label>
+					<input asp-for="Name" class="form-control my-2" />
+				</div>
+				<div class="form-group my-3">
+					<label asp-for="Email" class="control-label"></label>
+					<input asp-for="Email" class="form-control my-2" />
+				</div>
+				<div class="form-group my-3">
+					<label asp-for="Password" class="control-label">Contraseña</label>
+					<input asp-for="Password" class="form-control my-2" type="password" />
+				</div>
+				<div class="form-group my-3">
+					<label asp-for="Password2" class="control-label">Repite contraseña</label>
+					<input asp-for="Password2" class="form-control my-2" type="password" />
+				</div>
+				<div class="form-group my-3">
+					<label asp-for="Phone" class="control-label">Móvil</label>
+					<input asp-for="Phone" class="form-control my-2" />
+				</div>
+				<input type="submit" value="Registrarse" class="btn btn-primary my-3" />
+			</form>
+			@if (!string.IsNullOrEmpty(ViewBag.msgErr))
+			{
+				<div class="alert alert-info">@ViewBag.msgErr</div>
+			}
+		</div>
 	</div>
 </div>
