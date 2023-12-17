@@ -1,21 +1,8 @@
-﻿using Amazon.S3.Model;
-using Azure;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using NuGet.Protocol;
 using OLP_WEB.Common;
-using OLP_WEB.Models;
 using SharedModels;
-using System.Net;
-using System.Net.Http;
-using System.Security.Claims;
-using System.Text;
 
 namespace OLP_WEB.Controllers
 {
@@ -54,9 +41,14 @@ namespace OLP_WEB.Controllers
 		{
 			try
 			{
-				if (string.IsNullOrWhiteSpace(userSignUser.Password) ||
-					string.IsNullOrWhiteSpace(userSignUser.Password2) ||
-					userSignUser.Password != userSignUser.Password2)
+				if (string.IsNullOrWhiteSpace(userSignUser.Name) ||
+					string.IsNullOrWhiteSpace(userSignUser.Email) ||
+					string.IsNullOrWhiteSpace(userSignUser.Phone))
+				{
+					throw new Exception("Complete todos los campos");
+				}
+
+				if (userSignUser.Password != userSignUser.Password2)
 				{
 					throw new Exception("Contraseñas introducidas inválidas. Escríbelas de nuevo");
 				}

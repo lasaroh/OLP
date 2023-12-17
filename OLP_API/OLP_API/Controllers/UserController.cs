@@ -1,24 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Intrinsics.Arm;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OLP_API.Data;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Reflection;
-using Microsoft.AspNetCore.JsonPatch;
 using SharedModels;
 
 namespace OLP_API.Controllers
 {
-    [ApiController]
+	[ApiController]
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
@@ -78,14 +69,18 @@ namespace OLP_API.Controllers
         {
             try
             {
-                var userDB = _context.User.FirstOrDefaultAsync(x => x.Id == user.Id).Result;
+				string err = "";
+				if (!ValidateUserFields(user, ref err)) return BadRequest(err);
+
+				var userDB = _context.User.FirstOrDefaultAsync(x => x.Id == user.Id).Result;
                 if (userDB == null) return NotFound("Usuario no encontrado en base de datos");
 
-                userDB.Name = UpdateField(userDB.Name, user.Name);
+				userDB.Name = UpdateField(userDB.Name, user.Name);
                 userDB.Email = UpdateField(userDB.Email, user.Email);
                 userDB.Phone = UpdateField(userDB.Phone, user.Phone);
+				
 
-                _context.User.Update(userDB);
+				_context.User.Update(userDB);
                 _context.SaveChanges();
                 return Ok(userDB);
             } catch (Exception ex)
@@ -146,13 +141,13 @@ namespace OLP_API.Controllers
             }
 			#endregion
 			#region EMAIL
-			/* - Starts with one or more letters, digits, periods, underscores, percentage signs, or plus/minus signs
+			/* - Starts with one or more letters, digits, periods, underscores, hyphens
 			 * - Followed by an "@" symbol
 			 * - Followed by one or more letters, digits, periods, or hyphens
 			 * - Followed by a period
 			 * - Ends with two or more letters
              */
-			string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+			string emailPattern = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             if (string.IsNullOrWhiteSpace(user.Email) || !Regex.IsMatch(user.Email, emailPattern))
             {
                 err = "Email introducido inválido";

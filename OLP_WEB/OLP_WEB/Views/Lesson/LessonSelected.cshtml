@@ -1,23 +1,37 @@
 ﻿@using Amazon.S3.Model;
 @using SharedModels;
-@model (string LessonName, string video_url);
+@model (int IdCourse, string LessonName, string video_url);
 @{
 	ViewData["Title"] = Model.LessonName;
 }
-<!-- ==================== TITLE ==================== -->
-<div id="div_title">
-	<h3>@Model.LessonName</h3>
+<div class="container">
+	<div class="m-3">
+		<form asp-controller="Course" asp-action="CourseSelected">
+			<input type="hidden" name="IdCourse" value="@Model.IdCourse" />
+			<input type="submit" class="btn btn-primary" value="Volver atrás" />
+		</form>
+	</div>
+
+
+	<!-- ==================== TITLE ==================== -->
+	<div id="div_title">
+		<h3>@Model.LessonName</h3>
+		</div>
+	<!-- ==================== LESSON ==================== -->
+		@if (string.IsNullOrEmpty(Model.video_url))
+		{
+			<p>Video no disponible.</p>
+		}
+		else
+		{
+			<div style="max-width: 100%; overflow: hidden;">
+				<video controls style="width: 100%; height: auto;">
+					<source src="@Model.video_url" type="video/mp4">
+					Video no soportado por el navegador
+				</video>
+			</div>
+
+		}
 </div>
 
-<!-- ==================== LESSON ==================== -->
-@if (string.IsNullOrEmpty(Model.video_url))
-{
-	<p>Video no disponible.</p>
-}
-else
-{
-	<video controls width="1280" height="720">
-		<source src="@Model.video_url" type="video/mp4">
-		Video no soportado por el navegador
-	</video>
-}
+

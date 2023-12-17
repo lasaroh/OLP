@@ -16,18 +16,25 @@
 		<p class="m-0">Categoría</p>
 	</div>
 	<div class="col col-lg-5">
-		<select class="form-control" id="category">
-			<option id="0">Cualquiera</option>
+		<select class="form-control" name="IdCategory">
+			<option value="0">Cualquiera</option>
 			@if (Model != null)
 			{
 				@foreach (Category category in Model.Categories)
 				{
-					<option id="@category.Id">@category.Name</option>
+					@if (category.Id == Model.IdCategory)
+					{
+						<option selected value="@category.Id">@category.Name</option>
+					}
+					else
+					{
+						<option value="@category.Id">@category.Name</option>
+					}
 				}
 			}
 		</select>
 	</div>
-	<div class="col col-lg-1">
+	<div class="col col-lg-1"> 
 		<input type="submit" value="Refrescar" class="btn btn-primary" />
 	</div>
 </form>
@@ -42,40 +49,40 @@
 <div class="container my-5">
 	@if (Model != null)
 	{
-		<div class="card-group">
-			@for (int i = 0; i < Model.Courses.Count;)
+		@for (int i = 0; i < Model.Courses.Count;)
+		{
+			if (Model.IdCategory != 0 && Model.Courses[i].Id_Category != Model.IdCategory)
 			{
-				<div class="row">
-					@for (int j = 0; j < 2; j++)
-					{
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title">@Model.Courses[i].Name</h5>
-								<p class="card-text">@Model.Courses[i].Description</p>
-								<form asp-controller="Course" asp-action="CourseSelected">
-									<input type="hidden" name="IdCourse" value="@Model.Courses[i].Id" />
-									<input type="submit" class="btn btn-primary" value="Empezar curso" />
-								</form>
-							</div>
-						</div>
-						i++;
-						if (i == Model.Courses.Count) break;
-					}
-				</div>
+				i++;
+				continue;
 			}
-		</div>
+			<div class="row">
+				@for (int j = 0; j < 2; j++)
+				{
+					<div class="card col m-2">
+						<div class="card-body">
+							<h5 class="card-title">@Model.Courses[i].Name</h5>
+							<p class="card-text">@Model.Courses[i].Description</p>
+							<form asp-controller="Course" asp-action="CourseSelected">
+								<input type="hidden" name="IdCourse" value="@Model.Courses[i].Id" />
+								<input type="submit" class="btn btn-primary" value="Empezar curso" />
+							</form>
+						</div>
+					</div>
+					i++;
+					if (i == Model.Courses.Count)
+					{
+						// Add column div for the last row
+						if (j == 0)
+						{
+							<div class="col m-2"></div>
+						}
+						break;
+					}
+				}
+			</div>
+		}
 	}
 
 	<div></div>
-</div>
-
-<!-- ==================== PAGINATION ==================== -->
-<div class="d-flex justify-content-center">
-	<ul class="pagination">
-		<li class="page-item"><a class="page-link" href="#">Previous</a></li>
-		<li class="page-item"><a class="page-link" href="#">1</a></li>
-		<li class="page-item"><a class="page-link" href="#">2</a></li>
-		<li class="page-item"><a class="page-link" href="#">3</a></li>
-		<li class="page-item"><a class="page-link" href="#">Next</a></li>
-	</ul>
 </div>

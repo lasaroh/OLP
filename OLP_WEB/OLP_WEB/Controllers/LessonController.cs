@@ -27,7 +27,7 @@ namespace OLP_WEB.Controllers
 				using HttpResponseMessage result = await client_api.GetAsync("api/Lesson/LessonSelected?" + parameters);
 				result.EnsureSuccessStatusCode();
 				string video_url = await result.Content.ReadAsStringAsync();
-				return View("LessonSelected", (LessonName, video_url));
+				return View("LessonSelected", (IdCourse, LessonName, video_url));
 			}
 			catch (Exception ex)
 			{
