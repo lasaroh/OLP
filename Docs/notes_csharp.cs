@@ -29,11 +29,3 @@ BUG: para errores o problemas conocidos
 
 
 Utilizar NCHAR(utiliza 2 bytes) en lugar VARCHAR(utiliza 1 byte)  para poder almacenar multiples idiomas
-
-
-
-COMMIT
-+ ahora el navbar es responsivo
-+ ahora el video es responsivo
-+ en el listado de cursos se añade un div extra a la última fila para mantener la estructura
-+ Cuando se actualizan los campos de un usuario existente también se validan
